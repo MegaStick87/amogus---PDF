@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Esta declaración indica que el documento sigue el estándar HTML5. -->
+<html lang="es">
+<!-- La etiqueta <html> abre el documento HTML y especifica que el idioma del contenido es español. -->
+<head>
+    <!-- La sección <head> contiene información meta sobre el documento, como su título y enlaces a hojas de estilo. -->
+
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres UTF-8 para el documento. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura una visualización adecuada y una escala inicial en dispositivos móviles. -->
+
+    <title>SUS</title>
+    <!-- Define el título de la página, visible en la pestaña del navegador. -->
+
+    <link rel="icon" type="image/png" href="img/11104180.png">
+    <!-- Establece un favicon para la página web. -->
+
+    <link rel="stylesheet" href="sus.css">
+    <!-- Enlaza una hoja de estilos CSS externa para formatear la página. -->
+</head>
+<!-- Aquí cierra la etiqueta </head>. Todo lo que está entre <head> y </head> no se muestra 
+    directamente en la página web, pero proporciona información al navegador. -->
+
+<body>
+    <!-- Contiene todo el contenido visible de la página web. -->
+    <audio autoplay loop>
+        <!-- Elemento de audio que se reproduce automáticamente y en bucle. -->
+        <source src="song/AMOGUS.mp3" type="audio/mp3">
+        <!-- Define la fuente del archivo de audio. -->
+    </audio>
+    <div class="amongus">
+        <!-- Contenedor principal para la figura de 'Among Us'. -->
+        <div class="body"></div>
+        <!-- Representa el cuerpo del personaje. -->
+
+        <div class="amongus-sombra"></div>
+        <!-- Representa la sombra del personaje. -->
+
+        <div class="visor">
+            <!-- Contenedor del visor del personaje. -->
+            <div class="visor-sombra">
+                <!-- Sombra del visor. -->
+                <div class="visor-reflex"></div>
+                <!-- Reflejo en el visor. -->
+            </div>
+        </div>
+        <div class="mochila"></div>
+        <!-- Representa la mochila del personaje. -->
+        <div class="pierna-izq"></div>
+        <!-- Representa la pierna izquierda del personaje. -->
+        <div class="pierna-der"></div>
+        <!-- Representa la pierna derecha del personaje. -->
+    </div>
+    <button id="download-pdf-btn">Descargar como PDF</button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="sus.js"></script>
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

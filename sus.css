@@ -1,0 +1,113 @@
+* { /* Selector Universal '*' */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos. */
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos. */
+    box-sizing: border-box; /* Cambia el modelo de caja para que width y height incluyan el relleno y el borde. */
+}
+
+body {
+    display: flex; /* Usa Flexbox para el diseño. */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor. */
+    justify-content: center; /* Centra los elementos horizontalmente en el contenedor. */
+    width: 100vw; /* Establece el ancho del body al 100% del ancho de la ventana del navegador. */
+    height: 100vh; /* Establece la altura del body al 100% de la altura de la ventana del navegador. */
+    background-color: #bbe6ff; /* Color de fondo celeste claro. */
+}
+
+.amongus {
+    position: relative; /* Posición relativa para posicionar los elementos hijos. */
+    width: 160px; /* Ancho del contenedor principal. */
+    height: 200px; /* Altura del contenedor principal. */
+}
+
+.amongus .body {
+    border: 8px solid black; /* Borde sólido negro. */
+    border-radius: 35% 50px 30% 30px; /* Radios de borde para dar forma al cuerpo. */
+    width: 100px; /* Ancho del cuerpo. */
+    height: 140px; /* Altura del cuerpo. */
+    position: absolute; /* Posición absoluta dentro de .amongus. */
+    top: 10px; /* Posición desde la parte superior del contenedor .amongus. */
+    left: 40px; /* Posición desde la izquierda del contenedor .amongus. */
+    background-color: rgb(0, 140, 255); /* Color de fondo azul. */
+    z-index: 1; /* Establece el orden de apilamiento. */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor. */
+}
+
+.amongus .amongus-sombra {
+    position: absolute; /* Posición absoluta dentro de .amongus. */
+    left: 37px; /* Posición desde la izquierda. */
+    top: 167px; /* Posición desde la parte superior. */
+    background-color: rgba(0, 0, 0, 0.4); /* Color de fondo negro con transparencia. */
+    width: 100px; /* Ancho de la sombra. */
+    height: 22px; /* Altura de la sombra. */
+    border-radius: 50%; /* Borde redondo para forma circular. */
+}
+
+.amongus .visor {
+    width: 75px; /* Ancho del visor. */
+    height: 48px; /* Altura del visor. */
+    border: 8px solid black; /* Borde sólido negro. */
+    position: absolute; /* Posicionamiento absoluto respecto al contenedor .amongus. */
+    left: 69px; /* Posición desde la izquierda del contenedor padre. */
+    top: 32px; /* Posición desde la parte superior del contenedor padre. */
+    border-radius: 30px 65% 30px; /* Radios de borde para dar forma al visor. */
+    background-color: #46626c; /* Color de fondo del visor. */
+    z-index: 2; /* Establece el orden de apilamiento sobre otros elementos. */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del visor. */
+}
+
+.amongus .visor .visor-sombra {
+    width: 53px; /* Ancho de la sombra del visor. */
+    height: 22px; /* Altura de la sombra del visor. */
+    border-radius: 10px; /* Bordes redondeados para la sombra del visor. */
+    position: absolute; /* Posicionamiento absoluto dentro del visor. */
+    top: -1px; /* Posición desde la parte superior del visor. */
+    left: 10px; /* Posición desde la izquierda del visor. */
+    z-index: 2; /* Orden de apilamiento igual al del visor. */
+    background-color: #91c5d4; /* Color de fondo de la sombra del visor. */
+    transform: rotateZ(-3deg); /* Rotación ligera para dar un efecto tridimensional. */
+}
+
+.amongus .visor .visor-sombra .visor-reflex {
+    position: absolute; /* Posicionamiento absoluto dentro de la sombra del visor. */
+    top: 5px; /* Posición desde la parte superior de la sombra del visor. */
+    left: 16px; /* Posición desde la izquierda de la sombra del visor. */
+    height: 10px; /* Altura del reflejo. */
+    width: 28px; /* Ancho del reflejo. */
+    border-radius: 10px; /* Bordes redondeados para el reflejo. */
+    background-color: #f1f9f7; /* Color de fondo para el reflejo. */
+    z-index: 2; /* Orden de apilamiento igual al de la sombra del visor. */
+    transform: rotateZ(6deg); /* Rotación opuesta a la sombra para acentuar el efecto tridimensional. */
+}
+
+.amongus .mochila {
+    width: 70px; /* Ancho de la mochila. */
+    height: 90px; /* Altura de la mochila. */
+    border: 8px solid black; /* Borde sólido negro. */
+    border-radius: 20px 0 0 35%; /* Radios de borde para dar forma a la mochila. */
+    position: absolute; /* Posicionamiento absoluto respecto al contenedor .amongus. */
+    left: 18px; /* Posición desde la izquierda del contenedor padre. */
+    top: 55px; /* Posición desde la parte superior del contenedor padre. */
+    background-color: rgb(0, 140, 255); /* Color de fondo de la mochila. */
+}
+
+.amongus .pierna-izq {
+    width: 35px; /* Ancho de la pierna izquierda. */
+    height: 45px; /* Altura de la pierna izquierda. */
+    border: 8px solid black; /* Borde sólido negro. */
+    position: absolute; /* Posicionamiento absoluto respecto al contenedor .amongus. */
+    top: 132px; /* Posición desde la parte superior del contenedor padre. */
+    left: 95px; /* Posición desde la izquierda del contenedor padre. */
+    border-radius: 20% 20% 30% 30%; /* Radios de borde para dar forma a la pierna. */
+    background-color: rgb(0, 140, 255); /* Color de fondo de la pierna. */
+}
+
+.amongus .pierna-der {
+    width: 35px; /* Ancho de la pierna derecha. */
+    height: 45px; /* Altura de la pierna derecha. */
+    border: 8px solid black; /* Borde sólido negro. */
+    position: absolute; /* Posicionamiento absoluto respecto al contenedor .amongus. */
+    top: 137px; /* Posición desde la parte superior del contenedor padre. */
+    left: 48px; /* Posición desde la izquierda del contenedor padre. */
+    border-radius: 20% 20% 30% 30%; /* Radios de borde para dar forma a la pierna. */
+    background-color: rgb(0, 140, 255); /* Color de fondo de la pierna. */
+}
